@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Documents</title>
 </head>
 <body>
     <h1>Order cakes form:</h1>
+    <form action="thanku.html">
+
+        <label>Name:</label>
+        <input placeholder="enter your full name" type="text" name="txt_name" required>
+
+        <br>
+        <label>Phone:</label>
+        <input placeholder="enter your phone" type="tel" name="txt_phone" required>
+        <br>
+
+        <label>Choose cake</label>
+        <select name ="cake">
+            <option value="vanilla">Vanilla cakes</option>
+            <option value="orange">Orange cakes</option>
+            <option value="lemon">Lemon cakes</option>
+        </select>
+        <br>
+        <input type="checkbox" name="check" required>
+        <label>I confirm my order</label>
+        <br>
+
+        <label>Tip amount:</label>
+        <input type="radio" name="tip" required value="0">
+        <label>No tip</label>
+        <input type="radio" name="tip" value="5">
+        <label>5% tip</label>
+        <input type="radio" name="tip" value="10">
+        <label>10% tip</label>
+        <br>
+
+        <label>Comment:</label>
+        <textarea name="comment"></textarea>
+
+        <br>
+        <br>
+        <button>order cake</button>
+    </form>
 </body>
 </html>
