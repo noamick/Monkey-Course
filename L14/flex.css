@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: silver;
+    font-family: verdana;
+}
+
+.container{
+    max-width: 800px;
+    background-color: white;
+    padding: 8px;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+}
+
+.box1{
+    flex:1;
+}
+.row1{
+    display: flex ;
+}
+.row1 > div {
+    border: 1px solid grey;
+    padding: 8px;
+}
