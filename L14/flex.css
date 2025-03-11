@@ -29,3 +29,23 @@ h1{
     border: 1px solid grey;
     padding: 8px;
 }
+
+.row2{
+    border:2px solid grey;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box_a{
+    min-height: 150px;
+    background-color: orange;
+    width: 30%;
+}
+.box_b{
+    background-color: darkcyan;
+    width: 30%;
+}
+.box_c{
+    background-color: greenyellow;
+    width: 30%;
+}
