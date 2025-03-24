@@ -89,8 +89,6 @@
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    padding: 20px;
-    
     padding: 60px 60px;
     margin: 30px 30px;
 }
@@ -110,7 +108,7 @@
 }
 
 .category-bar {
-    background-color: #00b0f0; 
+    background-color: #00b0f0; /* צבע תכלת */
     padding: 10px;
     text-align: center;
 }
@@ -130,7 +128,9 @@
 .card-image img {
     width: 100%;
     height: auto;
+    max-height: 300px;
     border-radius: 8px;
+    object-fit: cover;
 }
 
 .card-text {
@@ -158,8 +158,53 @@
     color: darkblue;
 }
 .footer{
-    background-color:rgb(4, 4, 44);
+    background-color: rgb(16, 9, 56);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+    margin: 10px ;
 }
+.footer-container {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+}
+.card-footer{
+    width: calc(25% - 20px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    min-height: 350px; 
+    flex-grow: 1; 
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px; 
+    text-align: center;
+}
+.category-bar-footer{
+    background-color: grey;
+    padding: 10px;
+    text-align: center;
+}
+
+.options h4 {
+    color: white;
+    margin: 0;
+    font-size: 1.2rem;
+}
+.footer-image {
+    width: 250px; /* גודל התמונה */
+    height: auto;
+    padding-right: 50px;
+    border-radius: 10px;
+    order: 2; /* מציב את התמונה אחרונה בתוך ה-flex כך שהיא תהיה בצד ימין */
+}
+
+
 body{
     background-color: white;
     height: 100%;
