@@ -74,6 +74,7 @@ main .container{
     display: flex;
     padding: 32px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 main .box{
     width: 200px;
@@ -82,4 +83,20 @@ main .box{
     padding: 16px;
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
     z-index: 99;
+}
+
+@media screen and (max-width:728px){
+    .strip{
+        background: orange;
+    }
+    headerv.logo img{
+        width: 100%;
+    }
+    header nav{
+        display: none;
+    }
+    main .box{
+        width: 100%;
+        margin-bottom:24px;
+    }
 }
