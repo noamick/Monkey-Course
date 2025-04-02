@@ -1,0 +1,42 @@
+body{
+  background: silver;
+  margin:0;
+  font-family: sans-serif;
+}
+
+.container{
+  max-width: 900px;
+  background: white;
+  padding:8px;
+  margin: 0 auto;
+}
+
+#id_h1{
+  color:red;
+}
+
+#id_h1:hover{
+  color:Silver;
+}
+
+
+.container > h2{
+  background: aqua;
+}
+
+.container h2+p{
+  /* background: yellow; */
+}
+
+/* .container p:first-of-type{ */
+/* .container p:last-of-type{ */
+.container > p:nth-of-type(3n+1){
+  background: orange;
+}
+.container > img[src="images/cake.jpg"]{
+  border: 2px solid red;
+}
+
+.container > img[alt="logo"]{
+  border: 8px solid green;
+}
