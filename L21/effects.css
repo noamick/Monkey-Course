@@ -1,0 +1,28 @@
+body{
+  background: silver;
+  margin:20px;
+  font-family: sans-serif;
+}
+
+.container{
+  max-width: 900px;
+  background: white;
+  padding:12px;
+  border-radius: 12px;
+  margin: 0 auto;
+}
+.pic1{
+  filter: grayscale(100%) blur(4px);
+  transition: 1000ms;
+}
+.pic1:hover{
+  filter: grayscale(0%) blur(0px);
+}
+.pic2{
+  transition: 2000ms;
+
+}
+.pic2:hover{
+  transform:scale(1.2) rotate(45deg);
+}
+

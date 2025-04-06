@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: silver;
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+.container{
+    max-width: 900px;
+    margin:0 auto;
+    background: white;
+    padding: 8px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 50%;
+    border: 1px solid grey;
+}
+
+table tr:nth-of-type(2n+3){
+    background: #ddd;
+    border:1px  solid gray;
+}
+
+table th{
+    text-align:left;
+    background: orange;
+}
+
+table td , table th{
+   
+    padding: 8px;
+    width: 33.33%;
+}
