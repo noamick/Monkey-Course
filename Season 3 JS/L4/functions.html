@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function init(){
+      // document.getElementById("id_h2").innerHTML = "HELLO!";
+      document.querySelector("#id_h2").innerHTML = "HELLO!!!";
+      document.querySelector("#id_h2").style.background = "yellow";
+
+      changeImg();
+      // id_h2.innerHTML = 
+    }
+
+    function changeImg(){
+      document.querySelector("#id_img").src = "images/terminator.jpg";
+      document.querySelector("#id_img").width = 400;
+    }
+  </script>
+</head>
+<body onload="init()">
+  <h1 style="background:red;">Dom rules</h1>
+  <h2 id="id_h2">---</h2>
+  <img id="id_img" src="images/avengers.jpg" width="100" alt="movie" >
+</body>
+</html>

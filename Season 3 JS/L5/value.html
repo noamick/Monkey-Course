@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function init(){
+            changeFontColor();
+
+        }
+        function changeBgolor(){
+            document.querySelector("#id_h1").innerHTML= document.querySelector('#id_input').value;
+            document.querySelector("#id_h1").style.background = document.querySelector('#id_input').value;
+        }
+        function changeFontColor(){
+            document.querySelector("#id_h1").style.color= document.querySelector('#id_select').value;
+
+        }
+    </script>
+</head>
+<body onload="init()">
+    <h1 id="id_h1">Enter your favorite Color:</h1>
+    <input id="id_input" type="text" oninput="changeBgolor()">
+    <button onclick="changeBgolor()">Change color</button>
+    <h2>Choose font color</h2>
+    <select id="id_select" onchange="changeFontColor()">
+        <option value="blue">blue</option>
+        <option value="red">red</option>
+        <option value="green">green</option>
+    </select>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function init(){
+      declareEvents();
+
+    }
+    function declareEvents(){
+      // old
+      // document.querySelector('#orange_btn').onclick = changeH1Orange;
+      //new
+      document.querySelector('#orange_btn').addEventListener("click",changeH1Orange);
+    }
+    function changeH1Red(){
+      document.querySelector("#id_h1").style.background = "red";
+    }
+    function changeH1Blue(){
+      document.querySelector("#id_h1").style.background = "blue";
+    }
+    function changeH1Green(){
+      document.querySelector("#id_h1").style.background = "green";
+    }
+    function changeH1Orange(){
+      document.querySelector("#id_h1").style.background = "orange";
+    }
+  </script>
+</head>
+<body onload="init()">
+  <h1 id="id_h1">Choose color you like:</h1>
+  <button onclick="changeH1Red()">Red</button>
+  <button onclick="changeH1Blue()">Blue</button>
+  <button onclick="changeH1Green()">Green</button>
+  <button id="orange_btn">Orange</button>
+</body>
+</html>
